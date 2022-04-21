@@ -34,7 +34,7 @@ def calculate_activity(bmr_result):
     return(int(activity_level))
 
 def gain_or_lose(activity_level):
-    goals = input('Do you want to lose, maintain, or gain weight: ')
+    goals = input('Do you want to lose fat, maintain weight, or gain weight: ')
 
     if goals == 'lose':
         calories = activity_level - 500
