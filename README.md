@@ -1,1 +1,2 @@
 # macro-cal-calculator
+My project for an application will be a convenient macro calorie counter, including all foods but higly tailored to more macro friendly foods. The idea of this is for people that would like to eat cleaner while still acheiving all daily macro goals an individuals body needs. The goal of this application is so it can be used by the average Joe, someone who is heavily involved in the fitness community, and even businesses.
