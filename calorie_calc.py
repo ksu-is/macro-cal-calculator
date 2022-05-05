@@ -1,4 +1,3 @@
-print="Welcome to Online Macro Calorie Calculation!"
 def user_info():
     age = int(input('What is your age: '))
     gender = input('What is your gender: ')
@@ -21,7 +20,7 @@ def user_info():
     return(int(bmr_result))
 
 def calculate_activity(bmr_result): 
-    activity_level = input('What is your activity level (none, light, moderate, or heavy): ')
+    activity_level = input('What is your activity level (none, light, moderate, heavy, or extreme): ')
 
     if activity_level == 'none':
         activity_level = 1.2 * bmr_result
@@ -31,11 +30,13 @@ def calculate_activity(bmr_result):
         activity_level = 1.55 * bmr_result
     elif activity_level == 'heavy':
         activity_level = 1.725 * bmr_result
+    elif activity_level == 'extreme':
+        activity_level = 1.9 * bmr_result
 
     return(int(activity_level))
 
 def gain_or_lose(activity_level):
-    goals = input('Do you want to lose fat, maintain weight, or gain weight: ')
+    goals = input('Do you want to lose, maintain, or gain weight: ')
 
     if goals == 'lose':
         calories = activity_level - 500
